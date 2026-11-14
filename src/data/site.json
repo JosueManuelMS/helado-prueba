@@ -1,0 +1,70 @@
+{
+  "seo": {
+    "title": "Blu — il gelato del barrio",
+    "description": "Blu: gelato italiano hecho a diario con ingredientes peruanos y sabores de temporada."
+  },
+  "links": {
+    "whatsapp": "51977516642",
+    "instagram": "https://www.instagram.com/blu.ilgelato/",
+    "orders": "https://linktr.ee/blugelateria"
+  },
+  "hero": {
+    "eyebrow": "Hecho hoy · hecho aquí",
+    "wordmark": "BLU",
+    "intro": "Gelato italiano con acento peruano. Fresco, honesto y hecho cada día para el barrio.",
+    "primaryCta": "Descubre los sabores ↓",
+    "secondaryCta": "Encuentra tu local",
+    "imagePublicId": "blu/hero-gelato",
+    "imageUrl": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1200&q=85",
+    "imageAlt": "Copa de gelato artesanal de sabores"
+  },
+  "flavorsSection": {
+    "eyebrow": "La vitrina de hoy",
+    "title": "El sabor sigue a la temporada.",
+    "disclaimer": "* Selección referencial para el bosquejo. Los sabores cambian según la temporada y disponibilidad."
+  },
+  "flavors": [
+    { "name": "Pistacchio", "note": "Clásico italiano", "color": "#b8d98c", "category": "gelato" },
+    { "name": "Maracumango", "note": "Fruta y sol", "color": "#ffbd38", "category": "sorbetto" },
+    { "name": "Menta + muña", "note": "Fresco y peruano", "color": "#9bd6b3", "category": "gelato" },
+    { "name": "Cioccolato", "note": "Intenso y cremoso", "color": "#6f4032", "category": "gelato" },
+    { "name": "Chirimoya", "note": "De temporada", "color": "#d7e8b9", "category": "sorbetto" },
+    { "name": "Stracciatella", "note": "Leche + chocolate", "color": "#eee4d0", "category": "gelato" }
+  ],
+  "story": {
+    "eyebrow": "La manera Blu",
+    "title": "Poco artificio.",
+    "titleLine2": "Mucho barrio.",
+    "description": "Laura y Nicolás unieron la tradición del gelato italiano con los ingredientes que crecen aquí. La regla de la casa es sencilla: fruta fresca, respeto por la estación y producción diaria.",
+    "foundingLabel": "dal 2015",
+    "imagePublicId": "blu/taller-barranco",
+    "imageUrl": "https://images.unsplash.com/photo-1557142046-c704a3adf364?auto=format&fit=crop&w=1000&q=85",
+    "imageAlt": "Preparación artesanal de gelato",
+    "stats": [
+      { "value": "16", "label": "sabores al día", "color": "#ef7996" },
+      { "value": "100%", "label": "hecho fresco", "color": "#b8d98c" },
+      { "value": "10+", "label": "años de oficio", "color": "#ef7996" }
+    ]
+  },
+  "meeting": {
+    "eyebrow": "Dos orillas, una vitrina",
+    "title": "Italia conoce al Perú.",
+    "description": "Pistacchio y stracciatella conviven con lúcuma, algarrobina, chirimoya y muña. El resultado no es fusión por moda: es la memoria de dos lugares servida en una copa.",
+    "linkLabel": "Ver la vitrina del día ↗",
+    "imagePublicId": "blu/sabores-temporada",
+    "imageUrl": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=1200&q=85",
+    "imageAlt": "Selección colorida de gelatos artesanales"
+  },
+  "locations": [
+    { "district": "Barranco", "address": "Av. Almirante Miguel Grau 201", "hours": "11:00 — 21:00", "featured": true },
+    { "district": "San Isidro", "address": "C. Miguel Dasso 113–115", "hours": "11:00 — 21:00", "featured": false },
+    { "district": "La Molina", "address": "Santiago de Compostela 167", "hours": "12:30 — 20:00", "featured": false },
+    { "district": "Surco", "address": "El Polo II", "hours": "12:30 — 20:00", "featured": false }
+  ],
+  "finalCta": {
+    "title": "Hoy merece un gelato.",
+    "description": "Pregunta por los sabores del día y separa tu favorito por WhatsApp.",
+    "buttonLabel": "¿Qué sabores hay hoy? →",
+    "whatsappMessage": "Hola Blu, ¿qué sabores tienen hoy?"
+  }
+}

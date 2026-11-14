@@ -1,0 +1,127 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: JosueManuelMS/helado-prueba
+  branch: main
+
+locale: es
+media_folder: public/uploads
+public_folder: /uploads
+
+output:
+  omit_empty_optional_fields: true
+
+collections:
+  - name: configuracion
+    label: Landing page
+    files:
+      - name: inicio
+        label: Contenido principal
+        file: src/data/site.json
+        format: json
+        fields:
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Descripción, name: description, widget: text }
+
+          - label: Enlaces
+            name: links
+            widget: object
+            fields:
+              - { label: WhatsApp, name: whatsapp, widget: string, hint: "Solo números, incluyendo 51." }
+              - { label: Instagram, name: instagram, widget: string }
+              - { label: Pedidos, name: orders, widget: string }
+
+          - label: Portada
+            name: hero
+            widget: object
+            fields:
+              - { label: Cintillo, name: eyebrow, widget: string }
+              - { label: Marca, name: wordmark, widget: string }
+              - { label: Descripción, name: intro, widget: text }
+              - { label: Botón sabores, name: primaryCta, widget: string }
+              - { label: Botón locales, name: secondaryCta, widget: string }
+              - { label: Public ID de Cloudinary, name: imagePublicId, widget: string, required: false }
+              - { label: Imagen alternativa, name: imageUrl, widget: image, required: false, hint: "Se muestra cuando Cloudinary no está configurado." }
+              - { label: Texto alternativo, name: imageAlt, widget: string }
+
+          - label: Sección de sabores
+            name: flavorsSection
+            widget: object
+            fields:
+              - { label: Cintillo, name: eyebrow, widget: string }
+              - { label: Título, name: title, widget: string }
+              - { label: Nota, name: disclaimer, widget: text }
+
+          - label: Sabores
+            name: flavors
+            widget: list
+            summary: "{{fields.name}} — {{fields.note}}"
+            min: 1
+            fields:
+              - { label: Nombre, name: name, widget: string }
+              - { label: Descripción, name: note, widget: string }
+              - { label: Color, name: color, widget: color, allow_input: true }
+              - label: Tipo
+                name: category
+                widget: select
+                options:
+                  - { label: Gelato, value: gelato }
+                  - { label: Sorbetto, value: sorbetto }
+
+          - label: Historia
+            name: story
+            widget: object
+            fields:
+              - { label: Cintillo, name: eyebrow, widget: string }
+              - { label: Título, name: title, widget: string }
+              - { label: Segundo renglón, name: titleLine2, widget: string }
+              - { label: Descripción, name: description, widget: text }
+              - { label: Etiqueta de fundación, name: foundingLabel, widget: string }
+              - { label: Public ID de Cloudinary, name: imagePublicId, widget: string, required: false }
+              - { label: Imagen alternativa, name: imageUrl, widget: image, required: false }
+              - { label: Texto alternativo, name: imageAlt, widget: string }
+              - label: Indicadores
+                name: stats
+                widget: list
+                min: 1
+                fields:
+                  - { label: Valor, name: value, widget: string }
+                  - { label: Texto, name: label, widget: string }
+                  - { label: Color, name: color, widget: color, allow_input: true }
+
+          - label: Encuentro Italia + Perú
+            name: meeting
+            widget: object
+            fields:
+              - { label: Cintillo, name: eyebrow, widget: string }
+              - { label: Título, name: title, widget: string }
+              - { label: Descripción, name: description, widget: text }
+              - { label: Texto del enlace, name: linkLabel, widget: string }
+              - { label: Public ID de Cloudinary, name: imagePublicId, widget: string, required: false }
+              - { label: Imagen alternativa, name: imageUrl, widget: image, required: false }
+              - { label: Texto alternativo, name: imageAlt, widget: string }
+
+          - label: Locales
+            name: locations
+            widget: list
+            summary: "{{fields.district}} — {{fields.address}}"
+            min: 1
+            fields:
+              - { label: Distrito, name: district, widget: string }
+              - { label: Dirección, name: address, widget: string }
+              - { label: Horario, name: hours, widget: string }
+              - { label: Destacado, name: featured, widget: boolean, default: false }
+
+          - label: Llamada final
+            name: finalCta
+            widget: object
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Descripción, name: description, widget: text }
+              - { label: Botón, name: buttonLabel, widget: string }
+              - { label: Mensaje de WhatsApp, name: whatsappMessage, widget: string }
